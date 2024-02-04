@@ -75,7 +75,8 @@ function makeBook(bookObject) {
 
     if (bookObject.status === 'unfinished') {
         const moveToFinishedButton = createButton('Selesai Dibaca', 'finished', bookObject.id);
-        bookContainer.append(moveToFinishedButton);
+        const deleteButton = createButton('Hapus', 'delete', bookObject.id);
+        bookContainer.append(moveToFinishedButton, deleteButton);
     } else {
         const moveToUnfinishedButton = createButton('Belum Selesai Dibaca', 'unfinished', bookObject.id);
         const deleteButton = createButton('Hapus', 'delete', bookObject.id);
