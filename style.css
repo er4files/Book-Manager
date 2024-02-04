@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #5F30E2;
+    padding: 16px;
+    color: white;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper .container {
+    width: 90%; /* Changed from 1024px to 90% */
+    border-radius: 8px;
+    margin: 16px;
+    background: #F8F9FA;
+    padding: 16px;
+    flex-grow: 1;
+    height: fit-content;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+
+.book {
+    border-radius: 8px;
+    margin-top: 16px;
+    padding: 12px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book > .inner h2, .book > .inner p {
+    margin: 0; /* Changed from 'unset' */
+}
+
+.form {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    height: fit-content;
+    border-radius: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #5F30E2;
+}
+
+.shadow {
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+
+input[type=text], input[type=number], input[type=checkbox], input[type=submit], select {
+    font-family: 'Raleway', sans-serif;
+    background: #F5F1FF;
+    border: 2px solid #9475EA;
+    border-radius: 8px;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+.btn-submit {
+    width: fit-content;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 16px;
+    padding: 12px;
+    border: 2px solid #5F30E2;
+    color: black;
+    font-size: 16px;
+    margin-top: auto;
+    align-self: flex-end;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-submit:hover {
+    background: #5F30E2;
+    color: white;
+}
+
+input[type=text], input[type=number], input[type=submit], select:focus {
+    outline: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        margin: 0;
+    }
+
+    .wrapper .container {
+        width: 100%;
+    }
+
+    .bookshelf {
+        width: 90%;
+    }
+
+    .form {
+        width: 100%;
+    }
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    background-color: #5F30E2;
+    color: white;
+}
