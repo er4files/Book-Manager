@@ -24,7 +24,7 @@ header {
 }
 
 .wrapper .container {
-    width: 90%; /* Changed from 1024px to 90% */
+    width: 90%; 
     border-radius: 8px;
     margin: 16px;
     background: #F8F9FA;
@@ -46,7 +46,7 @@ header {
 }
 
 .book > .inner h2, .book > .inner p {
-    margin: 0; /* Changed from 'unset' */
+    margin: 0; 
 }
 
 .form {
